@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+        <title>Frontend Mentor | Interactive rating component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Rating state start -->
+        <main class="flex">
+            <div class="card flex" id="initialScreen">
+                <div class="cardContent flex" id="selection">
+                    <div class="starIconContainer">
+                        <span class="circle"><img src="images/icon-star.svg" alt="" class="starIcon"></span>
+                    </div>
+                    <h1 class="cardTitle">How did we do?</h1>
+                    <p class="cardParagraph">
+                        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                    <div class="scores flex">
+                        <button class="buttonSelect">1</button>
+                        <button class="buttonSelect">2</button>
+                        <button class="buttonSelect">3</button>
+                        <button class="buttonSelect">4</button>
+                        <button class="buttonSelect">5</button>
+                    </div>
+                    <button class="submit">SUBMIT</button>
+                </div>
+            </div>
+
+            <div class="card flex disabled" id="finalScreen">
+                <div class="cardContent flex" id="selection">
+                    <div class="flex">
+                        <span><img src="images/illustration-thank-you.svg" alt="" class="illustration"></span>
+                    </div>
+                    <div class="scoreSelected">
+                        <p>You selected
+                            <span id="scoreNumberSelected"></span>
+                            out of 5</p>
+                    </div>
+                    <h1 class="cardTitle align-center">Thank you!</h1>
+                    <p class="cardParagraph align-center">
+                        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+
+        <!-- You selected Add rating here out of 5
+                                                                                                                                
+                                                                                                                                  Thank you!
+                                                                                                                                
+                                                                                                                                  We appreciate you taking the time to give a rating. If you ever need more support, 
+                                                                                                                                  don’t hesitate to get in touch! -->
+
+        <!-- Thank you state end --><script src="index.js"> </script>
+    </body>
+</html>
